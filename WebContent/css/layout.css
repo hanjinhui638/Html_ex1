@@ -70,7 +70,7 @@ header {
 .main {
 	clear:both;
 	width: 47.9166%;
-	height: 900px;
+	min-height: 900px; 
 	background-color: red;
 	margin: 0 auto; /* block태그  inline태그 - align-content: center; */
 	margin-top: 127px; 
@@ -110,52 +110,61 @@ footer{
 	background-repeat: repeat;
 	background-color: gray;
 	margin-top: 80px;
+	overflow: hidden;	
+	
 
 }
 
 .footer_wrap{
 	width: 47.9166%;
-	height: 132px;
+	height: 100%;
 	margin: 0 auto;
-	overflow: hidden;	
-	padding: 45.5px;
+	/* padding-top: 40px;
+	box-sizing: border-box; */
+	margin-top: 20px;
 }
 
 .footer_logo{
 	
 	float: left;
-	margin-right: 60px;
 }
 
-.footer_nav >ul{
+.footer_nav{
+	width: 60%;
+	height:100%;
 	float: left;
-	
+	margin-left: 3.076%;
+}
+.footer_link{
+	width: 20%;
+	height: 100%;
+	float: right;	
+	text-align: right;
 }
 
-.footer_subnav1 li{
-	display: inline-block;
+.footer_subnav1 {
+	
 	color: LightGray  ;
-	font-size: 13px;	
-	margin-bottom: 10px;
-	font-weight: bold;
+	font-size: 0.8rem;	
 	
 }
 
-.footer_subnav2 li{
+.footer_subnav2 {
 	color: LightGray ;
-	font-size: 13px;
-	font-weight: bold;
+	font-size: 0.8rem;
+	padding-top: 5px;
 }
 
-#a{
+.footer_subnav2 >span{
 	color: gray;
-	font-size: 11px;
-	font-weight: normal;
+	font-size:0.6em ;
+
 }
 
-.footer_opt{
-	float: right;
-	background-color: gray;
-	color: lightGray;
-	
+.footer_link > select{
+	width:100%;
+	background-color: #4e4e4e;
+	border:0;
+	color: #a9a9a9;
 }
+
