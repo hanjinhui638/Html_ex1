@@ -24,16 +24,16 @@ header {
 	
 } 
 
-.header_wrap >ul{
-	
-	float: left;
-	margin-left: 60px;
-	
-}
+
 
 .header_logo {
 	margin-top: 13px;
 	float: left;
+	
+}
+.header_nav{
+		float: left;
+	margin-left: 60px;
 	
 }
 
@@ -45,6 +45,11 @@ header {
 	color: white;
 }
 
+.header_subnav{
+	
+	float:right;
+	
+}
 .header_subnav > li{
 	float: right;
 	line-height: 67px;
